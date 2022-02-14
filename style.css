@@ -1,0 +1,841 @@
+/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fffbf0;
+}
+
+header{
+    width: 100%;
+    height: 10rem;
+    /* background-color: rgba(20, 20, 20, 0.445); */
+    background: transparent;
+    z-index: 11;
+}
+
+header .logo{
+    margin: .5rem auto;
+    width: 70vh;
+    height: 65vh; 
+    /* background-color: rebeccapurple; */
+}
+
+header nav{
+    display: flex;
+}
+
+header nav ul{
+    display: flex;
+    position: relative;
+    top: 2rem;
+    margin: 0 auto;
+}
+
+header nav ul li{
+    padding: 1rem 2.5rem;
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    transition: all 0.5s ease; 
+}
+
+header nav ul li:hover a{
+    padding: .5rem 2rem;
+    background-color: #943d24;
+    color: rgb(236, 225, 225);
+}
+
+
+.back{
+    width: 100vw;
+    height: 100vh;
+    margin: 1rem 0;
+    position: relative;
+    top: -12rem;
+    z-index: -11;
+    display: flex;
+    flex-direction: column;
+}
+
+.back img{
+    width: 100vw;
+    height: 100vh;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.back .context{
+    width: 100vw;
+    height: 25vh;
+    /* background-color: rebeccapurple; */
+    line-height: 1.2;
+}
+
+.context h1{
+    text-align: center;
+    padding: .5rem 0;
+    color: #943d24;
+    font-size: 3rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+
+.context p{
+    font-size: 1rem;
+    text-align: left;
+    padding: .5rem 0;
+    margin: 0 20rem;
+    color: #1b1b1b;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+.main{
+    width: 100vw;
+    height: 80vh;
+    /* background-color: #fc4445; */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.main #btn{
+    width: 10rem;
+    height: 3rem;
+    box-sizing: border-box;
+    /* background-color: rgba(12, 12, 12, 0.404); */
+    background: transparent;
+    color: rgb(22, 21, 21);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0 0 0 3rem;
+    transition: all 0.4s ease;
+    border: 2px solid #943d24 ;
+}
+
+.main #btn:hover{
+    background-color: #943d24;
+    color: #fff;
+}
+
+.main-context{
+    width: 35vw;
+    height: 70vh;
+    /* background-color: rgba(0, 0, 0, 0.336); */
+}
+.main-context h1{
+    font-size: 2.5rem;
+    margin: 1rem 2rem;
+    font-family:  'Manrope', sans-serif;
+    font-weight: 500;
+    color: #943d24;
+}
+.main-context p{
+    font-size: 1.1rem;
+    margin: 2rem 3rem;
+    color: #1b1b1b;
+    font-family: 'Manrope', sans-serif;
+}
+
+.main .main-img{
+    width: 35vw;
+    height: 70vh;
+    background: url(https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_960_720.jpg);
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 2px 3px 10px rgb(219, 213, 213);
+}
+
+.heading {
+    width: 100vw;
+    height: 13vh;
+    /* background-color: red; */
+}
+
+.heading h1{
+    text-align: center;
+    color: #943d24;
+    font-weight: 500;
+    font-family:'Manrope', sans-serif;
+    font-size: 3rem;
+}
+
+.wedding-shoots{
+    width: 100vw;
+    height: 90vh;
+     /* background:#E9DAC1;  */
+     display: grid; 
+     grid-template-columns: 20em 20em 20em;
+    grid-template-rows: 16em 16em;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "box1 box2 box3"
+      "box4 box5 box6"; 
+      justify-content: center;
+      align-content: center;
+      column-gap: 5rem;
+      row-gap: 2rem;  
+}
+
+.wedding-shoots * img{
+    width: 25vw;
+    height: 35vh;
+    object-position: center top;
+    object-fit: cover;
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+.box5{
+    grid-area: box5;
+}
+.box6{
+    grid-area: box6;
+}
+
+
+.wedding-shoots .box1, .box2, .box3, .box4, .box5, .box6{
+    width: 25vw;
+    height: 35vh;
+    /* background-color: rgba(0, 0, 0, 0.39); */
+    object-fit: cover;
+    margin-left: -1em;
+}
+
+.pre-shoot{
+    width: 100vw;
+    height: 20vh;
+    /* background: rebeccapurple; */
+    text-align: center;
+}
+.pre-shoot h1{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    padding: 1rem 0;
+    font-size: 3rem;
+    color: #943d24;
+}
+
+.youtube{
+    width: 100vw;
+    height: 70vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.you-video{
+    width: 40vw;
+    height: 65vh;
+    /* background-color: blueviolet; */
+}
+.you-video iframe{
+    width:40vw; 
+    height:65vh; 
+
+}
+
+
+.you-context{
+    width: 40vw;
+    height: 65vh;
+    /* background-color: royalblue; */
+}
+.you-context h1{
+    font-family: 'Manrope', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+    color: #943d24;
+}
+
+.you-context p{
+    line-height: 1.2;
+    padding: 0 2rem;
+}
+
+.you-context p::first-letter{
+    font: 700;
+    font-size: 3rem;
+}
+
+.prewed-slide{
+    width: 100vw;
+    height: 70vh;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prewed-slide .preslide{
+    width: 19rem;
+    height: 14rem;
+}
+.preslide1{
+    background: url(https://images.pexels.com/photos/2532241/pexels-photo-2532241.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-size: cover;
+    background-position: center center;
+
+}
+.preslide2{
+    background: url(https://images.pexels.com/photos/1805416/pexels-photo-1805416.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-size: cover;
+    background-position: center center;
+
+}
+.preslide3{
+    background: url(https://images.pexels.com/photos/2532215/pexels-photo-2532215.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-size: cover;
+    background-position: center center;
+
+}
+.preslide4{
+    background: url(https://images.pexels.com/photos/2106673/pexels-photo-2106673.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-size: cover;
+    background-position: center center;
+
+}
+.preslide5{
+    background: url(https://images.pexels.com/photos/3785644/pexels-photo-3785644.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-size: cover;
+    background-position: center center;
+
+}
+/* footer style  */
+
+footer{
+    width: 100vw;
+    height: 20vh;
+    display: inline;
+    text-align: center;
+    background: blueviolet;
+}
+
+footer h1{
+    font-size: 3rem;
+    font-family:'Manrope', sans-serif;
+    color: #943d24;
+    font-weight: 700;
+}
+footer .logo{
+    margin: 2rem 0;
+}
+footer a{
+    margin: 0rem 2rem;
+
+}
+
+
+/* footer end  */
+
+
+/* responsive design  */
+
+/* 320 px to 480px  */
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    header .logo{
+        width: 100vw;
+        height: 60vh;
+        /* background: yellow; */
+    }
+    .logo img{
+        width: 100%;
+        height: 60vh;
+    }
+
+    header nav ul li{
+        padding: .5em;
+    }
+    nav ul li a{
+        padding: 0;
+    }
+
+    .back .context{
+        /* background: yellow; */
+        height: 60vh;
+    }
+
+    .context h1{
+       font-size: 2.5em; 
+    }
+    .context p{
+        margin: 0 1em;
+    }
+
+    .main{
+        /* background: red; */
+        gap: 0;
+        margin-top: 7rem;
+        height: 80vh;
+        flex-direction: column;
+    }
+
+    .main .main-context{
+        /* background: yellow; */
+        width: 100vw;
+    }
+    .main-context h1{
+        margin: 0;
+        text-align: center;
+        font-size: 2em;
+    }
+    .main-context p{
+        margin: 0 2em;
+    }
+    .main-context #btn{
+        margin-left: 7em;
+    }
+    .main .main-img{
+        margin-top: .5em;
+        width: 100vw;
+    }
+
+    .heading{
+        /* background: green; */
+    }
+    .heading h1{
+        font-size: 2.5em;
+        padding: .2em 0;
+    }
+
+    .wedding-shoots{
+        width: 100%;
+        height: 240vh;
+        grid-template-columns:minmax(22em, 32em);
+        grid-template-rows: repeat(6,16em);
+        grid-template-areas: "box1" "box2 "
+        "box3" "box4" 
+        "box5" "box6"; 
+        justify-content: center;
+        align-content:space-between;
+        gap: 0;
+        /* background-color: aqua; */
+    }
+
+    .box1{
+        grid-area: box1;
+    }
+     .box2{
+        grid-area: box2;
+     }
+     .box3{
+        grid-area: box3;
+     }
+     .box4{
+        grid-area: box4;
+     }
+     .box5{
+        grid-area: box5;
+     }
+     .box6{
+        grid-area: box6;
+     }
+
+     .wedding-shoots * img{
+        width: 100%;
+        height: 16em;
+        object-position: center top;
+        object-fit: cover;
+     }
+    
+     .wedding-shoots .box1, .box2, .box3, .box4, .box5, .box6{
+        width: 100%;
+        height: 16em;
+     }
+
+     .pre-shoot{
+         /* background: red; */
+         margin-top: 1em;
+         height: 10vh;
+     }
+     .pre-shoot h1{
+         font-size: 2em;
+     }
+
+     .youtube{
+         margin-top: .5em;
+        /* background: blue; */
+        height: 100vh;
+        flex-direction: column;
+        position: relative;
+     }
+
+     .youtube .you-video{
+         position: absolute;
+         top: 0;
+         width: 100vw;
+         height: 50vh;
+         /* background: yellow; */
+     }
+     .you-video iframe{
+         width: 100vw;
+         height: 100%;
+     }
+
+     .youtube .you-context{
+         width: 100%;
+         height: 50vh;
+         position: absolute;
+         top:20em;
+     }
+     .you-context h1{
+         font-size: 2em;
+     }
+     
+     .prewed-slide{
+        height: 170vh;
+        justify-content: center;
+
+     }
+
+     footer{
+         height: 10vh;
+
+     }
+     
+     footer h1{
+         /* background: yellow; */
+         font-size: 2em;
+         margin-top: 1em;
+     }
+
+     footer .logo{
+         /* background: green; */
+         height: 10vh;
+         margin: 0;
+     }
+
+     footer .logo a{
+         width: 10px;
+         height: 10px;
+     }
+
+     footer .logo a img{
+         width: 50px;
+         height: 50px;
+         margin-top: 10px;
+     }
+}
+
+
+/* 481px to 768px  */
+@media screen and (min-width:481px) and (max-width:768px) {
+
+    .logo img{
+        width: 100%;
+    }
+
+    .back .context{
+        /* background-color: red; */
+        height: 40vh;
+    }
+    .context p{
+        margin: 0 2em;
+        line-height: 1;
+    }
+
+    .main{
+        /* background-color: yellow; */
+        height: 100vh;
+        gap: 2em;
+        flex-flow: column;
+        margin-top: -1rem;
+    }
+
+    .main .main-context{
+        width: 100%;
+        height: 70%;
+        /* background: green; */
+    }
+
+    .main .main-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    .wedding-shoots{
+        height: 300vh;
+        /* background: yellow; */
+        grid-template-columns: minmax(30em, 49em);
+        grid-template-rows: repeat(6, 20em);
+        column-gap: 0;
+        row-gap: 0;
+        grid-template-areas: "box1" "box2 "
+        "box3" "box4" 
+        "box5" "box6"; 
+        justify-content: center;
+    }
+
+    .box1{
+        grid-area: box1;
+    }
+     .box2{
+        grid-area: box2;
+     }
+     .box3{
+        grid-area: box3;
+     }
+     .box4{
+        grid-area: box4;
+     }
+     .box5{
+        grid-area: box5;
+     }
+     .box6{
+        grid-area: box6;
+     }
+
+     .wedding-shoots * img{
+        width: 100%;
+        height: 20em;
+        object-position: center center;
+        object-fit: cover;
+     }
+    
+     .wedding-shoots .box1, .box2, .box3, .box4, .box5, .box6{
+        width: 100%;
+        height: 20em;
+        margin: 0 auto;
+     }
+
+     .youtube{
+       /* background: yellow; */
+       flex-flow: column;
+       height: 120vh;
+       position: relative;
+    }
+
+    .youtube .you-video{
+        width: 100%;
+        /* background: green; */
+        position: absolute;
+        top: 0;
+    }
+    .you-video iframe{
+        width: 100%;
+    }
+    .youtube .you-context{
+        /* background: firebrick; */
+        width: 80%;
+        height: 35%;
+        margin-top: 25em;
+    }
+    .you-context h1{
+        font-size: 2em;
+        margin: 0;
+    }
+    .you-context p{
+        padding: 0 1em;
+
+    }
+
+     .prewed-slide{
+         /* background: yellow; */
+         justify-content: center;
+         margin-top: -2em;
+     }
+     .preslide5{
+         display: none;
+     }
+    
+     footer .logo a img{
+         width: 50px;
+         height: 50px;
+     }
+}
+
+@media screen and (max-width:608px){
+    .prewed-slide{
+        height: 170vh;
+    }
+
+    .prewed-slide .preslide{
+        width: 30em;
+    }
+    .preslide5{
+        display: block;
+    }
+    
+}
+/* end 768px */
+/*769px — 1024px  */
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .context p{
+        margin: 0 2rem;
+    }
+
+    .main{
+        /* background: rebeccapurple; */
+        justify-content: space-evenly;
+        gap: 0;
+        position: relative;
+        top: -4rem;
+
+    }
+    .main .main-context{
+        width: 40vw;
+        height: 60vh;
+        /* background-color: blue; */
+    }
+    .main-context h1{
+        margin: 0;
+    }
+
+    .main-context p{
+        margin: 1rem 0;
+    }
+
+    .main .main-img{
+        width: 40vw;
+        height: 60vh;
+    }
+
+    .heading{
+        position: relative;
+        top: -5em;
+        /* background: rebeccapurple; */
+    }
+    
+   .wedding-shoots{
+       position: relative;
+       top: -5em;
+       height: 140vh;
+    display: grid; 
+    grid-template-columns: 45% 45%; 
+    grid-template-rows: 16em 16em 16em; 
+    gap: 1em 9px; 
+    grid-template-areas:
+    "box1 box2 "
+    "box3 box4" 
+    "box5 box6"; 
+    /* background: red; */
+   }
+
+ .box1{
+    grid-area: box1;
+}
+ .box2{
+    grid-area: box2;
+ }
+ .box3{
+    grid-area: box3;
+ }
+ .box4{
+    grid-area: box4;
+ }
+ .box5{
+    grid-area: box5;
+ }
+ .box6{
+    grid-area: box6;
+ }
+
+
+ .wedding-shoots * img{
+    width: 100%;
+    height: 18em;
+    object-position: center top;
+    object-fit: cover;
+ }
+
+ .wedding-shoots .box1, .box2, .box3, .box4, .box5, .box6{
+    width: 100%;
+    height: 18em;
+    /* background-color: rgba(0, 0, 0, 0.39); */
+    margin: 0;
+    padding: 0 1rem;
+ }
+
+ .pre-shoot{
+    margin-top: -3em;
+ }
+
+ .youtube{
+    gap: 1em;
+    align-items: flex-start;
+    height: 60vh;
+ }
+
+ .youtube .you-video{
+    width: 50vw;
+    height: 50vh;
+    margin-left: 1em;
+ }
+
+ .you-video iframe{
+    width: 50vw;
+    height: 50vh;
+ }
+
+ .youtube .you-context{
+    width: 50vw;
+    height: 50vh;
+    margin-right: 1em; 
+ }
+
+ .you-context h1{
+    margin: 0;
+    font-size: 2rem;
+ }
+
+ .prewed-slide{
+    width: 100vw;
+    height: 70vh;
+    gap: .5em;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+ .preslide5{
+    display: none;
+ }
+
+ .prewed-slide .preslide{
+    width: 16rem;
+    height: 14rem;
+ }
+
+ footer{
+     position: relative;
+     top: 1em;
+ }
+
+
+}
+
+
